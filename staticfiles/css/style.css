@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Zen+Loop:ital@0;1&display=swap');
+
+:root {
+    --background-light: #FBF5DD; /* For light background areas */
+    --accent-green: #A6CDC6;    /* For buttons, highlights, or links */
+    --dark-teal: #16404D;       /* For header, footer, or dark text */
+    --golden-highlight: #DDA853; /* For call-to-action buttons, banners, or highlights */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--dark-teal);
+}
+
+
+.navbar {
+    background-color: var(--background-light);
+    border-bottom: 2px solid var(--golden-highlight);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--dark-teal);
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: var(--golden-highlight);
+}
+
+.navbar .nav-item-icons i {
+    color: var(--dark-teal);
+    font-size: 1.2rem;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-item-icons i:hover {
+    color: var(--golden-highlight);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: var(--accent-green);
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2230%22 height%3D%2230%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22%23FBF5DD%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}
+
+.navbar img {
+    border-radius: 50%;
+    border: 2px solid var(--golden-highlight);
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-buttons {
+    margin-left: 50%;
+}
+
+/*  */
+
+.card {
+    border: 1px solid var(--golden-highlight);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+    color: var(--dark-teal);
+    border-color: var(--golden-highlight);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--golden-highlight);
+    color: #fff;
+}
